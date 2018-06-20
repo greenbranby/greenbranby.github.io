@@ -659,6 +659,9 @@ footer {
       font-size: 1em;
       padding-bottom: 70px; } }
 
+.intro.design {
+  color: #71B0B8; }
+
 @media (min-width: 769px) {
   .card {
     text-align: left; } }
@@ -783,9 +786,9 @@ ul.skills-gd {
       margin: 0 auto; } }
 
 .skills-gd li {
-  border: 2px solid #9FD1DA;
+  border: 2px solid #71B0B8;
   display: inline-block;
-  color: #9FD1DA;
+  color: #71B0B8;
   padding: 8px 15px;
   margin: 0 20px 20px;
   transition: transform .7s; }
