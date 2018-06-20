@@ -1,0 +1,43 @@
+// Screen readers
+%srt {
+    visibility: hidden;
+}
+
+// Center text
+%center-align {
+  text-align: center;
+}
+
+
+/* Float Clearfix ------------------ */
+%clearfix
+    .group:after {
+      content: "";
+      display: table;
+      clear: both;
+}
+
+// Grid styles
+%grid {
+  padding: 10px 25px;
+    border: 1px solid $black;
+    font-size : 1em;
+    font-weight:$font-wt-bold;
+    display: block;
+}
+
+%btn {
+    color: $black;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px 25px;
+    border: 2px solid $black;
+    font-size : 1em;
+    font-weight:$font-wt-regular;
+    text-transform: uppercase;
+    display: block;
+      }
+
+%marg-auto {
+  margin: 0 auto;
+}

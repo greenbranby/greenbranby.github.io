@@ -1,0 +1,84 @@
+
+/* Layout Styles --------------------- */
+
+#header {
+  width: 100%;
+  @extend %marg-auto;
+  background-color: $coral;
+  @include mq(medium){
+    display: block;
+  }
+}
+
+.colorful {
+  background:
+    -webkit-linear-gradient(135deg, hsla(189.06, 44.75%, 73.88%, 1) 15%, hsla(189.06, 44.75%, 73.88%, 0) 80%),
+    -webkit-linear-gradient(205deg, hsla(309.06, 32.8%, 77.33%, 1) 100%, hsla(309.06, 32.8%, 77.33%, 0) 70%);
+  background:
+    linear-gradient(315deg, hsla(189.06, 44.75%, 73.88%, 1) 15%, hsla(189.06, 44.75%, 73.88%, 0) 80%),
+    linear-gradient(245deg, hsla(309.06, 32.8%, 77.33%, 1) 100%, hsla(309.06, 32.8%, 77.33%, 0) 70%);
+  }
+
+#projects {
+  margin: 0 auto;
+  padding: 80px 50px;
+  max-width: 1440px;
+
+  @include mq(medium){
+    @include flex (flex, row, wrap, $just: space-around) {
+    }
+  }
+
+  @include mq(small){
+    @include flex (flex, row, wrap, $just: center) {
+    }
+  }
+}
+
+main {
+  background-color: #2C3339;
+  width: 100%;
+  padding: 120px 0;
+}
+
+.project-card {
+  position: relative;
+  line-height: 0;
+	margin-bottom: 20px;
+  overflow: hidden;
+  background-color: $white;
+}
+
+section {
+  background-color: $white;
+  width: 100%;
+  padding: 80px 0;
+}
+
+footer {
+  margin: 0 auto;
+  padding-bottom: 100px;
+  width: 100%;
+  height: auto;
+  background-color: #9FD1DA;
+}
+
+.social-icons li{
+  padding: 10px 15px 0 0;
+}
+
+footer ul{
+  @include mq(medium){
+    @include flex(flex, row, nowrap, $just: flex-start){
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  @include mq(small){
+    @include flex(flex, row, nowrap){
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

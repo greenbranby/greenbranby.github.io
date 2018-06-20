@@ -1,0 +1,60 @@
+// Font stack
+
+$font-url           : "https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,700|Playfair+Display:400,400i,700,700i,900";
+$stack-playfair     : 'Playfair Display', serif;
+$stack-crimson      : 'Crimson Text', serif;
+
+// Font Weight
+
+$font-wt-thin        : 100;
+$font-wt-light       : 300;
+$font-wt-regular     : 400;
+$font-wt-italic      : 400i;
+$font-wt-bold        : 500;
+$font-wt-bolder      : 600;
+$font-wt-boldest     : 700;
+
+// Font size
+$base-font-size: 18px;
+
+// Color Values
+$white        : #fff;
+$black        : #000;
+$grey         : #878787;
+$coral        :#fd7856;
+$hot-pink     :#ff0066;
+$cornflower-blue  :#9FD1DA;
+$dark-gray    :#2C3339;
+
+
+// Color Usage
+$color--primary      : $cornflower-blue;
+$color-secondary      :$dark-gray;
+
+
+// Color Palette modifiers
+$palettes: (
+  grey:  (
+    xx-light  : lighten($grey, 45%),
+    x-light   : lighten($grey, 35%),
+    base      : $grey,
+    dark      : darken ($grey, 8%),
+    x-dark    : darken ($grey, 16%),
+  )
+);
+
+// UI colors
+
+$ui-colors: (
+  default   : $dark-gray,
+  success   : $cornflower-blue,
+  error     : $hot-pink,
+  warning   : $coral,
+  info      : $grey
+);
+
+
+// Breakpoint
+$brk-sm : 1px;
+$brk-md : 768px;
+$brk-lg : 1100px;

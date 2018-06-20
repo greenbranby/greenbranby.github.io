@@ -1,0 +1,74 @@
+
+/* Button Styles------------------ */
+
+button {
+  padding: 5px 10px;
+  margin: 0 auto;
+  text-decoration: none;
+  color: $black;
+  border: 2px solid $black;
+  font-size: .8em;
+  font-weight:$font-wt-regular;
+  text-transform: uppercase;
+  display: block;
+  width: 150px;
+}
+
+ul.skills,
+ul.skills-gd {
+  @extend %center-align;
+  padding: 0;
+  margin-left: 95px;
+
+  @include mq(small){
+    margin: 0 auto;
+  }
+}
+
+
+.skills-gd li {
+  border: 2px solid #9FD1DA;
+  display: inline-block;
+  color: #9FD1DA;
+  padding: 8px 15px;
+  margin: 0 20px 20px;
+  transition: transform .7s;
+
+  @include mq(small){
+    font-size: 1em;
+  }
+}
+
+.skills-gd.hover li {
+  transform: rotate(360deg);
+}
+
+.skills li{
+  border: 2px solid #9FD1DA;
+  display: inline-block;
+  color: #9FD1DA;
+  opacity: 1;
+  padding: 8px 15px;
+  margin: 0 20px 20px;
+  transition: transform .7s;
+
+  @include mq(small){
+    font-size: 1em;
+  }
+}
+
+.skills.hover li {
+  transform: rotate(360deg);
+}
+
+
+.grid__col{
+  @include mq(medium){
+        @include m(12) {
+            .theme__colors {
+                margin: 30px 16px;
+            }
+            @include flex(flex);
+        }
+      }
+}

@@ -1,0 +1,35 @@
+/* Form Styles --------------------- */
+
+.form {
+    @include e(label) {
+      @include m(hidden) {
+        @extend %srt;
+      }
+      @include mq(medium){
+         width: 100%;
+      }
+    }
+}
+form{
+  @include mq(medium){
+     width: 100%;
+  }
+}
+
+input[type="text"],
+input[type="password"]
+{
+  width: 100%;
+  font-family: 'Mada', sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: $font-wt-bold ;
+  border: none;
+  border-bottom: 6px solid $grey;
+  padding: 10px 20px;
+}
+
+label[for="username"],
+label[for="password"] {
+  margin-left: em(15px);
+}

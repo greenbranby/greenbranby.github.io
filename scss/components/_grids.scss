@@ -1,0 +1,56 @@
+/* Grid ------------------ */
+
+.grid__col--3 {
+  color: $black;
+  margin-top: 40px;
+  margin-left: 60px;
+  display:block;
+  width: 300px;
+
+    @include mq(small){
+      margin-top: 0;
+      padding-top: 40px;
+    }
+}
+
+.grid__col--4 {
+  margin: 30px 0;
+  max-width: 400px;
+
+  @include mq(small){
+    margin-top: 0;
+    min-width: 320px;
+  }
+}
+
+
+.grid {
+  @extend %clearfix;
+  width: 90%;
+
+      //Make nested grid 100%
+      [class*="grid__col--"] > & {
+          width: 100%;
+      }
+  }
+
+
+//flex for grids
+
+.grid {
+    @include mq(medium) {
+        @include e(row) {
+            @include flex(flex, $just: space-between);
+            .centered {
+                display: block;
+                margin: auto;
+            }
+        }
+      }
+}
+
+.theme__colors{
+    @include mq(medium){
+      text-align: center;
+    }
+}

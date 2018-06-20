@@ -1,0 +1,35 @@
+/* Navigation Styles --------------------- */
+
+.nav {
+  @extend %center-align;
+  margin: 0;
+  padding:  0 0 70px;
+  @include mq(medium){
+    @include flex (flex, row, nowrap, $just: flex-end){
+      margin: 65px 0 0 200px;
+      width: 70%;
+    }
+}
+
+  @include mq(small){
+    padding-top: 40px;
+    @include flex (flex, row, wrap, $just: center){
+      padding: 25px 0 40px 0px;
+      // width: 70%;
+    }
+  }
+
+
+    @include e(item)  {
+      border-radius: .4em;
+      padding: 12px 20px;
+
+      a {
+          text-decoration: none;
+          display: block;
+          color: $black;
+          font-weight: $font-wt-light;
+          font-size: 1em;
+    }
+  }
+}

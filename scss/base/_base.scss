@@ -1,0 +1,95 @@
+/* Base Styles --------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f8f8;
+  font-family: 'Crimson Text', serif;
+}
+
+a:focus{
+  text-decoration: none;
+  color: #000;
+}
+
+a,
+a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff0066;
+}
+
+a.button{
+padding: 5px 10px;
+margin: 0 auto;
+text-decoration: none;
+color: #000;
+border: 2px solid #000;
+font-size: .8em;
+font-family: sans-serif;
+font-weight: normal;
+text-transform: uppercase;
+text-align: center;
+display: block;
+width: 150px;
+}
+
+a.social {
+  display:inline-block;
+  text-indent: -9999px;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+  opacity: .5;
+  transition: all .5s;
+}
+a.twitter {
+  background-image: url(../images/twitter.svg);
+}
+a.linkedin {
+  background-image: url(../images/linkedin.svg);
+}
+a.github {
+  background-image: url(../images/github.svg);
+}
+a.social:hover {
+  opacity: 1;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: normal;
+  color: #68707A;
+}
+
+h2 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+  font-size: 1.5em;
+  padding: 0 25px;
+  color: #68707A;
+}
+
+p {
+	font-size: 16px;
+	line-height: 1;
+}
+
+/* Lists------------------ */
+
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+ li {
+   font-size: 1.1em;
+   padding: 0 30px;
+ }
