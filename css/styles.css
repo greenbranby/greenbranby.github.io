@@ -778,6 +778,9 @@ button {
 
 ul.skills,
 ul.skills-gd {
+  font-size: 16px;
+  font-family: sans-serif;
+  text-transform: uppercase;
   padding: 0;
   margin-left: 95px; }
   @media (min-width: 1px) and (max-width: 768px) {
