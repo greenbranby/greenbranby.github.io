@@ -5,7 +5,7 @@ $(document).ready(function () {
 //   $(this).toggleClass('hover');
 // })
 
-$(".project-card").on("mouseenter mouseleave touchstart", function(e){
+$(".photo-overlay").on("mouseenter mouseleave touchstart", function(e){
     if(e.type == 'touchstart') {
       $(this).off('mouseenter mouseleave');
     }
