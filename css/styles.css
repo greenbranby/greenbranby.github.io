@@ -740,6 +740,7 @@ img {
   opacity: 0;
   transition: .5s; }
 
+.photo-overlay.hover,
 .photo-overlay:hover {
   opacity: 1; }
 

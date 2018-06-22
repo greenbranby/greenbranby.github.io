@@ -1,9 +1,9 @@
 $(document).ready(function () {
 
-//
-// $(".project-card").mouseover(function() {
-//   $(this).toggleClass('hover');
-// })
+
+$(".photo-overlay").mouseover(function() {
+  $(this).toggleClass('hover');
+})
 
 $(".photo-overlay").on("mouseenter mouseleave touchstart", function(e){
     if(e.type == 'touchstart') {
