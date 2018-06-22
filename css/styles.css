@@ -706,15 +706,10 @@ footer {
 img {
   transition: transform .5s; }
 
-.project-card:hover img {
-  opacity: 1;
-  transform: scale(1.2); }
-
 .img--frame img {
   transform-origin: 0 0; }
 
 .img--frame {
-  opacity: .85;
   max-width: 100%; }
 
 .photo-overlay {
@@ -726,6 +721,7 @@ img {
   left: 0;
   padding-left: 20px;
   padding-right: 20px;
+  z-index: 1;
   display: flex;
   /* For centering text inside .photo-overlay */
   flex-direction: column;

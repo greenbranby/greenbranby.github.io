@@ -1,4 +1,4 @@
-// $(document).ready(function () {
+$(document).ready(function () {
 //
 //
 // $(".photo-overlay").onclick(function() {
@@ -26,4 +26,14 @@
 //
 //     $(this).toggleClass("hover");
 
-//}); //end ready
+let data = projects;
+
+/*------------MEMBER  MODAL POP-UP --------*/
+
+$(document).on('click ',  '.project-cards', function(e) {
+    var i = $('.project-cards').index(this);
+    console.log(i);
+    //Get the index of the clicked member
+    memberModal(data[i]);
+  }); /
+}); //end ready
