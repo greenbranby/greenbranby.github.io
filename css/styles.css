@@ -721,7 +721,7 @@ img {
   left: 0;
   padding-left: 20px;
   padding-right: 20px;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   /* For centering text inside .photo-overlay */
   flex-direction: column;
@@ -736,7 +736,8 @@ img {
   opacity: 0;
   transition: .5s; }
 
-.photo-overlay:hover {
+.photo-overlay:hover
+.photo-overlay:focus {
   opacity: 1; }
 
 #linkedin-icon {
