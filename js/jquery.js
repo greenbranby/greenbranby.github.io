@@ -1,9 +1,9 @@
-$(document).ready(function () {
-
-
-$(".photo-overlay").onclick(function() {
-  $(this).toggleClass('hover');
-})
+// $(document).ready(function () {
+//
+//
+// $(".photo-overlay").onclick(function() {
+//   $(this).toggleClass('hover');
+// })
 
 // $(".photo-overlay").on("mouseenter mouseleave touchstart", function(e){
 //     if(e.type == 'touchstart') {
@@ -26,4 +26,4 @@ $(".photo-overlay").onclick(function() {
 //
 //     $(this).toggleClass("hover");
 
-}); //end ready
+//}); //end ready

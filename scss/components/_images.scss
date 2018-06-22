@@ -20,7 +20,7 @@ img {
   transition: transform .5s;
 }
 
-.project-card.hover img{
+.project-card:hover img{
   opacity:1;
 	transform: scale(1.2);
 }
@@ -60,7 +60,7 @@ img {
 	opacity: 0;
 	transition: .5s;
 }
-.photo-overlay.hover,
+
 .photo-overlay:hover {
 	opacity: 1;
 }
