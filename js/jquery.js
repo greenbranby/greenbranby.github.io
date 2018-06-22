@@ -1,16 +1,22 @@
 $(document).ready(function () {
 
-// 
+//
 // $(".project-card").mouseover(function() {
 //   $(this).toggleClass('hover');
 // })
 
-$(".skills-gd").mouseover(function() {
-  $(this).toggleClass('hover');
-})
+$(".skills-gd").on("mouseenter mouseleave touchstart", function(e){
+    if(e.type == 'touchstart') {
+      $(this).off('mouseenter mouseleave');
+    }
 
-$(".skills").mouseover(function() {
-  $(this).toggleClass('hover');
-})
+    $(this).toggleClass("hover");
+
+$(".skills").on("mouseenter mouseleave touchstart", function(e){
+    if(e.type == 'touchstart') {
+      $(this).off('mouseenter mouseleave');
+    }
+
+    $(this).toggleClass("hover");
 
 }); //end ready
