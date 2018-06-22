@@ -25,18 +25,21 @@ a:hover {
 }
 
 a.button{
-padding: 5px 10px;
-margin: 0 auto;
-text-decoration: none;
-color: #000;
-border: 2px solid #000;
-font-size: .8em;
-font-family: sans-serif;
-font-weight: normal;
-text-transform: uppercase;
-text-align: center;
-display: block;
-width: 150px;
+  padding: 15px 10px;
+  margin: 10px;
+  text-decoration: none;
+  color: #000;
+  border: 2px solid #000;
+  font-size: .8em;
+  font-family: sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+}
+
+a.button:hover {
+  color: #ff0066;
 }
 
 a.social {

@@ -1,9 +1,9 @@
 $(document).ready(function () {
 
-
-$(".project-card").mouseover(function() {
-  $(this).toggleClass('hover');
-})
+// 
+// $(".project-card").mouseover(function() {
+//   $(this).toggleClass('hover');
+// })
 
 $(".skills-gd").mouseover(function() {
   $(this).toggleClass('hover');

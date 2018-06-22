@@ -2,16 +2,15 @@
 /* Button Styles------------------ */
 
 button {
-  padding: 5px 10px;
-  margin: 0 auto;
+  padding: 20px 10px;
+  // margin: 50px;
   text-decoration: none;
   color: $black;
   border: 2px solid $black;
   font-size: .8em;
   font-weight:$font-wt-regular;
   text-transform: uppercase;
-  display: block;
-  width: 150px;
+  // display: block;
 }
 
 ul.skills,

@@ -411,8 +411,8 @@ a:hover {
   color: #ff0066; }
 
 a.button {
-  padding: 5px 10px;
-  margin: 0 auto;
+  padding: 15px 10px;
+  margin: 10px;
   text-decoration: none;
   color: #000;
   border: 2px solid #000;
@@ -421,8 +421,10 @@ a.button {
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
-  display: block;
-  width: 150px; }
+  display: inline-block; }
+
+a.button:hover {
+  color: #ff0066; }
 
 a.social {
   display: inline-block;
@@ -560,6 +562,12 @@ main {
   overflow: hidden;
   background-color: #fff; }
 
+.links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center; }
+
 section {
   background-color: #fff;
   width: 100%;
@@ -668,7 +676,7 @@ footer {
 
 .card-headline {
   font-size: 1.4em;
-  margin: 0px 20px 0 20px; }
+  margin: 20px 20px 0 20px; }
   @media (min-width: 1px) and (max-width: 768px) {
     .card-headline {
       font-size: 1.1em; } }
@@ -730,7 +738,7 @@ img {
 ==================================== */
 .photo-overlay {
   opacity: 0;
-  transition: opacity .5s; }
+  transition: .5s; }
 
 .photo-overlay:hover {
   opacity: 1; }
@@ -765,16 +773,13 @@ label[for="password"] {
 
 /* Button Styles------------------ */
 button {
-  padding: 5px 10px;
-  margin: 0 auto;
+  padding: 20px 10px;
   text-decoration: none;
   color: #000;
   border: 2px solid #000;
   font-size: .8em;
   font-weight: 400;
-  text-transform: uppercase;
-  display: block;
-  width: 150px; }
+  text-transform: uppercase; }
 
 ul.skills,
 ul.skills-gd {
