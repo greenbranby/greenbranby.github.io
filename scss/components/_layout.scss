@@ -42,7 +42,6 @@ main {
 }
 
 .project-card {
-  // height: 500px;
   position: relative;
   line-height: 0;
 	margin-bottom: 20px;
@@ -52,7 +51,6 @@ main {
 
 .links {
   @include flex(flex, row, nowrap, $just: center){
-    
   }
 }
 section {
@@ -61,16 +59,16 @@ section {
   padding: 80px 0;
 }
 
+.social-icons li{
+  padding: 10px 15px 0 0;
+}
+
 footer {
   margin: 0 auto;
   padding-bottom: 100px;
   width: 100%;
   height: auto;
   background-color: #9FD1DA;
-}
-
-.social-icons li{
-  padding: 10px 15px 0 0;
 }
 
 footer ul{

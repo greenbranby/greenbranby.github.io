@@ -24,7 +24,7 @@
       padding: 12px 20px;
 
       a {
-          text-decoration: none;
+          @extend %text-dec;
           display: block;
           color: $black;
           font-weight: $font-wt-light;
