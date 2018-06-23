@@ -1,20 +1,5 @@
 /* Image Styles ------------------ */
 
-.img--logo {
-  @extend %marg-auto;
-  display: block;
-  padding: 35px 0;
-}
-
-.img--avatar {
-  @extend %marg-auto;
-  display: block;
-  padding: 25px;
-
-  @include mq(medium){
-    margin-right: 50px;
-  }
-}
 
 img {
   transition: transform .5s;
@@ -60,7 +45,6 @@ img {
 .photo-overlay:active {
 	opacity: 1;
 }
-
 
 #linkedin-icon {
   width: 25px;

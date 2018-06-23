@@ -1,17 +1,6 @@
 
 /* Button Styles------------------ */
 
-button {
-  padding: 20px 10px;
-  // margin: 50px;
-  text-decoration: none;
-  color: $black;
-  border: 2px solid $black;
-  font-size: .8em;
-  font-weight:$font-wt-regular;
-  text-transform: uppercase;
-  // display: block;
-}
 
 ul.skills,
 ul.skills-gd {
@@ -26,6 +15,10 @@ ul.skills-gd {
     margin: 0 auto;
   }
 }
+.spin {
+  transition: transform .7s ease-in-out;
+  cursor: pointer;
+}
 
 
 .skills-gd li {
@@ -34,16 +27,17 @@ ul.skills-gd {
   color: #79BCC4;
   padding: 8px 15px;
   margin: 0 20px 20px;
-  transition: transform .7s;
 
   @include mq(small){
     font-size: 1em;
   }
 }
 
-.skills-gd.hover li {
-  transform: rotate(360deg);
+.spin.slide  {
+  //transform: rotate(360deg);
+  transform: translateX(40px);
 }
+
 
 .skills li{
   border: 2px solid #9FD1DA;
@@ -52,24 +46,15 @@ ul.skills-gd {
   opacity: 1;
   padding: 8px 15px;
   margin: 0 20px 20px;
-  transition: transform .7s;
 
   @include mq(small){
     font-size: 1em;
   }
 }
 
-.skills.hover li {
-  transform: rotate(360deg);
-}
-
-
 .grid__col{
   @include mq(medium){
         @include m(12) {
-            .theme__colors {
-                margin: 30px 16px;
-            }
             @include flex(flex);
         }
       }

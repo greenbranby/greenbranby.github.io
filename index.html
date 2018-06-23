@@ -35,28 +35,22 @@
 
   <div id="projects" class="grid__row">
     <div class="grid__col--4">
-      <div onclick="" class="project-card">
+      <div id="myBtn" onclick="" class="project-card">
         <img class="img--frame" src="images/project_11.png" alt="sample image">
         <div class="photo-overlay">
           <p class="card-headline">React Flickr Gallery App</p>
-          <p class="card-text">Created an image gallery that has search and filter functionality to populate via Flickr API using React, React Router, and Axios.</p>
+          <p class="card-text">Created an image gallery with search and filter functionality to populate via Flickr API using React, React Router, and Axios.</p>
           <div class="links">
             <a href="https://github.com/greenbranby/Treehouse-TD-Project-11" class ="button" target="_blank">CODE</a>
         </div>
       </div>
     </div>
-        <!-- <button id="myBtn">Go To Project</button> -->
-        <!-- <div id="myModal" class="modal">
 
-         <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Link to the React App unavailable because the FLickr API is not public</p>
-          </div>
-        </div> -->
+
 
     </div>
     <div class="grid__col--4">
-      <div onclick=""  class="project-card">
+      <div id="myBtn" onclick=""  class="project-card">
         <img class="img--frame" src="images/project_10.png" alt="Screengrab of Employee Directory">
         <div class="photo-overlay">
           <p class="card-headline">Employee Directory Using Public API</p>
@@ -69,11 +63,11 @@
       </div>
     </div>
     <div class="grid__col--4">
-      <div onclick="" class="project-card">
+      <div id="myBtn" onclick="" class="project-card">
         <img class="img--frame" src="images/project_9.png" alt="Screen grab of a Web App Dashboard">
         <div class="photo-overlay">
           <p class="card-headline">Web App Dashboard</p>
-          <p class="card-text">Built an interactive dashboard for a web application using advanced web techniques including SVG graphics, Chart.js and JavaScript programming</p>
+          <p class="card-text">Built an interactive dashboard for a web application including SVG graphics, Chart.js and JavaScript programming</p>
           <div class="links">
             <a href="https://github.com/greenbranby/techdegree-project-9" class ="button" target="_blank">CODE</a>
             <a href="https://greenbranby.github.io/techdegree-project-9" class ="button" target="_blank">SITE</a>
@@ -82,7 +76,7 @@
       </div>
     </div>
     <div class="grid__col--4">
-      <div onclick="" class="project-card">
+      <div id="myBtn" onclick="" class="project-card">
         <img class="img--frame" src="images/project_8.png" alt="Screen grab of a web page with SVGs">
         <div class="photo-overlay">
           <p class="card-headline">SVG Animations</p>
@@ -95,7 +89,7 @@
       </div>
     </div>
     <div class="grid__col--4">
-      <div onclick="" class="project-card">
+      <div id="myBtn" onclick="" class="project-card">
         <img class="img--frame" src="images/project_7.png" alt="Screen grab of game show app">
         <div class="photo-overlay">
           <p class="card-headline">Game Show App</p>
@@ -108,7 +102,7 @@
       </div>
     </div>
     <div class="grid__col--4">
-      <div onclick="" class="project-card">
+      <div id="myBtn" onclick="" class="project-card">
         <img class="img--frame" src="images/project_6.png" alt="Screen grab of Interactive Video Player">
         <div class="photo-overlay">
           <p class="card-headline">Interactive Video Player</p>
@@ -120,7 +114,7 @@
         </div>
       </div>
     </div>
-    <div class="grid__col--4">
+    <div id="myBtn"class="grid__col--4">
       <div onclick="" class="project-card">
         <img class="img--frame" src="images/project_5.png" alt="Screen grab of web style guide">
         <div class="photo-overlay">
@@ -134,7 +128,7 @@
       </div>
     </div>
     <div class="grid__col--4">
-      <div onclick="" class="project-card">
+      <div id="myBtn" onclick="" class="project-card">
         <img class="img--frame" src="images/project_4.png" alt="Screen grab of interactive image gallery project">
         <div class="photo-overlay">
           <p class="card-headline">Interactive Image Gallery</p>
@@ -147,7 +141,7 @@
       </div>
     </div>
     <div class="grid__col--4">
-      <div onclick="" class="project-card">
+      <div id="myBtn" onclick="" class="project-card">
         <img class="img--frame" src="images/project_3.png" alt="Screen grab of online registration form">
         <div class="photo-overlay">
           <p class="card-headline">Online Registration Form</p>
@@ -161,6 +155,13 @@
     </div>
   </div> <!--End Projects -->
 
+  <div id="myModal" ></div>
+   <!-- <div class="modal-content">
+      <span class="close">&times;</span>
+
+    </div>
+  </div> -->
+
 <!--About Section -->
 <div id="about" class="grid__row">
   <main role="main">
@@ -169,14 +170,14 @@
     </div>
     <div class="grid__col--12">
       <ul class="skills">
-        <li>HTML 5</li>
-        <li>CSS3</li>
-        <li>Javascript</li>
-        <li>SASS</li>
-        <li>Ajax</li>
-        <li>React.js</li>
-        <li>Dev Tools</li>
-        <li>Git</li>
+        <li class="spin">HTML 5</li>
+        <li class="spin">CSS3</li>
+        <li class="spin">Javascript</li>
+        <li class="spin">SASS</li>
+        <li class="spin">Ajax</li>
+        <li class="spin">React.js</li>
+        <li class="spin">Dev Tools</li>
+        <li class="spin">Git</li>
       </ul>
     </div>
  </main>
@@ -184,17 +185,17 @@
 
 <!--Skills and Goals Section -->
 
-<div id="skills" class="grid__row">
+<div class="grid__row">
   <section role="region">
     <div class="grid__col--12">
       <p class="intro design">I have a background in marketing design for ad agencies and in-house marketing departments. Designing brand identities, print ads, package designs, product catalogs, display graphics, digital design for email and web; all using the lastest design software. I have an expert skill level using Adobe&rsquo;s Illustrator, InDesign, Photoshop and Acrobat as well as Microsoft&rsquo;s suite of software including Word, Powerpoint, Excel and Outlook. </p>
     </div>
     <div class="grid__col--12">
       <ul class="skills-gd">
-        <li>Adobe Illustrator</li>
-        <li>Adobe InDesign</li>
-        <li>Adobe Photoshop</li>
-        <li>Microsoft Office Suite</li>
+        <li class="spin">Adobe Illustrator</li>
+        <li class="spin">Adobe InDesign</li>
+        <li class="spin">Adobe Photoshop</li>
+        <li class="spin">Microsoft Office Suite</li>
       </ul>
     </div>
    </section>
@@ -229,7 +230,7 @@
   </div>
 
   <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script src="js/main.js"></script>
+
   <script src="js/jquery.js"></script>
 
 </body>

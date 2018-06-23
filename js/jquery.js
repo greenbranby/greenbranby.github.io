@@ -1,30 +1,20 @@
 $(document).ready(function () {
 
 
-// $(".photo-overlay").onclick(function() {
-//   $(this).toggleClass('hover');
-// })
-//
-// $(".photo-overlay").on("mouseenter mouseleave touchstart", function(e){
-//     if(e.type == 'touchstart') {
-//       $(this).off('mouseenter mouseleave');
-//     }
-//
-//     $(this).toggleClass("hover");
-
-$(".skills-gd").on("mouseenter mouseleave touchstart", function(e){
+$(".spin").on("mouseenter mouseleave touchstart", function(e){
     if(e.type == 'touchstart') {
       $(this).off('mouseenter mouseleave');
     }
 
-    $(this).toggleClass("hover");
+    $(this).toggleClass("slide");
+});
 
-$(".skills").on("mouseenter mouseleave touchstart", function(e){
-    if(e.type == 'touchstart') {
-      $(this).off('mouseenter mouseleave');
+    function toggleImage(e) {
+      if (e.type == "touchstart") {
+        link.removeEventListener("mouseenter", toggleImage);
+        link.removeEventListener("mouseleave", toggleImage);
+      }
+
+      link.classList.toggle("slide");
     }
-
-    $(this).toggleClass("hover");
-
-
 }); //end ready
