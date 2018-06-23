@@ -38,7 +38,7 @@ a.button{
   display: inline-block;
 }
 
-a.button:hover {
+a.button.hover {
   color: #ff0066;
 }
 
@@ -60,7 +60,7 @@ a.linkedin {
 a.github {
   background-image: url(../images/github.svg);
 }
-a.social:hover {
+a.social.hover {
   opacity: 1;
   transform: scale(1.2);
 }
