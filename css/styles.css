@@ -771,6 +771,10 @@ ul.skills-gd {
     ul.skills,
     ul.skills-gd {
       margin: 0 auto; } }
+  @media (min-width: 769px) {
+    ul.skills,
+    ul.skills-gd {
+      width: 1000px; } }
 
 /* Bounce in headline animatation------------------ */
 @keyframes bounceIn {

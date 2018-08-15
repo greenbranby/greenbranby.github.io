@@ -10,9 +10,14 @@ ul.skills-gd {
   @extend %center-align;
   padding: 0;
   margin-left: 95px;
+  
 
   @include mq(small){
     margin: 0 auto;
+  }
+
+  @include mq(medium){
+    width: 1000px;
   }
 }
 /* Bounce in headline animatation------------------ */
