@@ -8,17 +8,12 @@ ul.skills-gd {
   font-family: sans-serif;
   text-transform: uppercase;
   @extend %center-align;
-  padding: 0;
-  margin-left: 95px;
-  
+  padding: 0 2% 0 2%;
+  margin: 0 auto;
 
-  @include mq(small){
-    margin: 0 auto;
-  }
-
-  @include mq(medium){
-    width: 1000px;
-  }
+  // @include mq(small){
+  //   margin: 0 auto;
+  // }
 }
 /* Bounce in headline animatation------------------ */
 

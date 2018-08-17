@@ -652,15 +652,14 @@ footer {
       padding-bottom: 70px; } }
 
 .intro {
-  margin: 80px 10px 120px 95px;
-  padding: 0 0 0 2%;
+  margin: 80px 10px 120px 20px;
+  padding: 0 2% 0 2%;
   font-size: 1.5em;
   font-family: "Playfair Display", serif;
   font-weight: 400;
   color: #9FD1DA;
   letter-spacing: .5px;
-  line-height: 1.8em;
-  width: 1000px; }
+  line-height: 1.8em; }
   @media (min-width: 1px) and (max-width: 768px) {
     .intro {
       width: auto;
@@ -765,16 +764,8 @@ ul.skills-gd {
   font-size: 16px;
   font-family: sans-serif;
   text-transform: uppercase;
-  padding: 0;
-  margin-left: 95px; }
-  @media (min-width: 1px) and (max-width: 768px) {
-    ul.skills,
-    ul.skills-gd {
-      margin: 0 auto; } }
-  @media (min-width: 769px) {
-    ul.skills,
-    ul.skills-gd {
-      width: 1000px; } }
+  padding: 0 2% 0 2%;
+  margin: 0 auto; }
 
 /* Bounce in headline animatation------------------ */
 @keyframes bounceIn {
