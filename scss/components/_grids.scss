@@ -23,6 +23,11 @@
   }
 }
 
+.grid__col--12 {
+  @include mq(large){
+  @include flex(flex, $just: center)
+  }
+}
 
 .grid {
   @extend %clearfix;
@@ -38,6 +43,7 @@
 //flex for grids
 
 .grid {
+
     @include mq(medium) {
         @include e(row) {
             @include flex(flex, $just: space-between);
