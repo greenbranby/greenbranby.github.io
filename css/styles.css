@@ -769,6 +769,10 @@ ul.skills-gd {
   text-transform: uppercase;
   padding: 0 2% 0 2%;
   margin: 0 auto; }
+  @media (min-width: 1px) and (max-width: 768px) {
+    ul.skills,
+    ul.skills-gd {
+      margin-bottom: 60px; } }
   @media (min-width: 769px) {
     ul.skills,
     ul.skills-gd {

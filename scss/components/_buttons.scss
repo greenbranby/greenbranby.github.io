@@ -11,6 +11,10 @@ ul.skills-gd {
   padding: 0 2% 0 2%;
   margin: 0 auto;
 
+  @include mq(small){
+    margin-bottom: 60px;
+  }
+
   @include mq(medium){
     margin: 60px auto;
   }
