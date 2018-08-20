@@ -572,7 +572,7 @@ main {
   justify-content: center; }
 
 section {
-  background-color: #fff;
+  background-color: #d8b2d2;
   width: 100%;
   padding: 80px 0 20px 0; }
 
@@ -644,7 +644,7 @@ footer {
     .blockquote {
       width: auto;
       border-top: 2px solid #000;
-      margin: 5% 10%;
+      margin: 0 10%;
       padding: 5% 0;
       text-align: center;
       border-left: none;
@@ -804,9 +804,9 @@ ul.skills-gd {
   animation-fill-mode: forwards; }
 
 .skills-gd li {
-  border: 2px solid #79BCC4;
+  border: 2px solid #2C3339;
   display: inline-block;
-  color: #79BCC4;
+  color: #2C3339;
   padding: 8px 15px;
   margin: 0 20px 20px; }
   @media (min-width: 1px) and (max-width: 768px) {
