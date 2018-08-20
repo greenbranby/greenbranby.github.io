@@ -4,6 +4,7 @@
 #header {
   width: 100%;
   @extend %marg-auto;
+  padding: 25px 0;
   background-color: $coral;
   @include mq(medium){
     display: block;
