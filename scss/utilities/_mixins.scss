@@ -25,7 +25,7 @@
 //Media Query Mixins
 
     @mixin mq ($break) {
-      @if $break =="small" {
+      @if $break == "small" {
         @media (min-width: $brk-sm) and (max-width: $brk-md) {
        @content;
     }

@@ -9,7 +9,12 @@
       margin: 65px 0 0 200px;
       width: 70%;
     }
-}
+    @include mq(large){
+      @include flex (flex, row, nowrap, $just: flex-end){
+        margin: 65px 0 0 200px;
+        width: 80%;
+      }
+}}
 
   @include mq(small){
     padding-top: 40px;

@@ -42,7 +42,6 @@
   line-height: 1.5em;
   width: 750px;
 
-
   @include mq(small){
     width: auto;
     border-top: 2px solid $black;
@@ -53,7 +52,17 @@
     font-size: 1em;
     padding-bottom: 70px;
     }
-  }
+    @include mq(small){
+      width: auto;
+      border-top: 2px solid $black;
+      margin: 5% 10% 0 10%;
+      padding: 5% 0;
+      text-align: center;
+      border-left: none;
+      font-size: 1em;
+      padding-bottom: 70px;
+      }
+}
 
 .intro {
   margin: 0 auto;
@@ -73,8 +82,11 @@
       font-size: 1em;
       padding-bottom: 70px;
     }
-
+    @include mq(medium){
+      padding: 0 10% 0 10%;
+    }
     @include mq(large){
+      padding: 0 5% 0 5%;
       max-width: 1460px;
     }
 }
@@ -86,6 +98,10 @@
     @include mq(medium){
       text-align: left;
     }
+    @include mq(large){
+      margin-left: 5%;
+    }
+
 }
 
 .card-headline {

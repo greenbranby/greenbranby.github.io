@@ -507,6 +507,15 @@ ul.skills-gd {
       justify-content: flex-end;
       margin: 65px 0 0 200px;
       width: 70%; } }
+  @media (min-width: 769px) and (min-width: 1400px) {
+    .nav {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      margin: 65px 0 0 200px;
+      width: 80%; } }
+
   @media (min-width: 1px) and (max-width: 768px) {
     .nav {
       padding-top: 40px;
@@ -651,6 +660,16 @@ footer {
       border-left: none;
       font-size: 1em;
       padding-bottom: 70px; } }
+  @media (min-width: 1px) and (max-width: 768px) {
+    .blockquote {
+      width: auto;
+      border-top: 2px solid #000;
+      margin: 5% 10% 0 10%;
+      padding: 5% 0;
+      text-align: center;
+      border-left: none;
+      font-size: 1em;
+      padding-bottom: 70px; } }
 
 .intro {
   margin: 0 auto;
@@ -669,8 +688,12 @@ footer {
       text-align: justify;
       font-size: 1em;
       padding-bottom: 70px; } }
-  @media (min-width: 1100px) {
+  @media (min-width: 769px) {
     .intro {
+      padding: 0 10% 0 10%; } }
+  @media (min-width: 1400px) {
+    .intro {
+      padding: 0 5% 0 5%;
       max-width: 1460px; } }
 
 .intro.design {
@@ -679,6 +702,9 @@ footer {
 @media (min-width: 769px) {
   .card {
     text-align: left; } }
+@media (min-width: 1400px) {
+  .card {
+    margin-left: 5%; } }
 
 .card-headline {
   font-size: 1.4em;
@@ -777,10 +803,12 @@ ul.skills-gd {
   @media (min-width: 769px) {
     ul.skills,
     ul.skills-gd {
-      margin: 60px auto; } }
-  @media (min-width: 1100px) {
+      margin: 60px auto;
+      padding: 0 10% 0 10%; } }
+  @media (min-width: 1400px) {
     ul.skills,
     ul.skills-gd {
+      padding: 0 5% 0 5%;
       max-width: 1480px; } }
 
 /* Bounce in headline animatation------------------ */
@@ -875,7 +903,7 @@ ul.skills-gd {
       margin-top: 0;
       min-width: 320px; } }
 
-@media (min-width: 1100px) {
+@media (min-width: 1400px) {
   .grid__col--12 {
     display: flex;
     justify-content: center; } }
