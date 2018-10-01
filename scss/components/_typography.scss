@@ -7,11 +7,12 @@
 }
 
 .headline--primary {
+  text-align: center;
   font-size: 120px;
   font-weight: $font-wt-boldest;
   color: $black;
   line-height: 1.3;
-  padding: 80px 25px 0 85px;
+  margin-bottom: 5%;
 
   @include mq(small){
     font-size: 100px;
@@ -31,27 +32,18 @@
   }
 
 .blockquote {
-  margin: 20px 10px 120px 95px;
-	padding: 0 0 0 2%;
-	border-left:5px solid $black;
+ @extend %center-align;
+  margin: 0 auto;
+  padding: 5% 0;
+  border-top: 2px solid $black;
 	font-size: 1.8em;
   font-family: $stack-playfair;
   font-weight:$font-wt-regular;
-  color: #2C3339;
+  color: $black;
   letter-spacing: .5px;
   line-height: 1.5em;
-  width: 750px;
+  width: 950px;
 
-  @include mq(small){
-    width: auto;
-    border-top: 2px solid $black;
-    margin: 5% 10% 0 10%;
-    padding: 5% 0;
-    text-align: center;
-    border-left: none;
-    font-size: 1em;
-    padding-bottom: 70px;
-    }
     @include mq(small){
       width: auto;
       border-top: 2px solid $black;
@@ -90,16 +82,20 @@
       max-width: 1460px;
     }
 }
+
 .intro.design {
   color: #2C3339;
+
+  @include mq(small){
+    text-align: center;
+  }
+
 }
+
 
 .card {
     @include mq(medium){
       text-align: left;
-    }
-    @include mq(large){
-      margin-left: 5%;
     }
 
 }
