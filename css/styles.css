@@ -502,17 +502,17 @@ ul.skills-gd {
     .nav {
       display: flex;
       flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: flex-end;
-      margin: 65px 0 0 200px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 25px 0 0 200px;
       width: 70%; } }
   @media (min-width: 769px) and (min-width: 1400px) {
     .nav {
       display: flex;
       flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: flex-end;
-      margin: 65px 0 0 200px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 25px 0 0 200px;
       width: 80%; } }
 
   @media (min-width: 1px) and (max-width: 768px) {

@@ -5,13 +5,13 @@
   margin: 0;
   padding:  0 0 70px;
   @include mq(medium){
-    @include flex (flex, row, nowrap, $just: flex-end){
-      margin: 65px 0 0 200px;
+    @include flex (flex, row, wrap, $just: center){
+      margin: 25px 0 0 200px;
       width: 70%;
     }
     @include mq(large){
-      @include flex (flex, row, nowrap, $just: flex-end){
-        margin: 65px 0 0 200px;
+      @include flex (flex, row, wrap, $just: center){
+        margin: 25px 0 0 200px;
         width: 80%;
       }
 }}
