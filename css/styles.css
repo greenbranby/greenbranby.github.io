@@ -405,7 +405,8 @@ a:focus {
 a,
 a:visited {
   color: #000;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: .5s ease-out; }
 
 a:hover {
   color: #ff0066; }
@@ -530,7 +531,12 @@ ul.skills-gd {
       display: block;
       color: #000;
       font-weight: 300;
-      font-size: 1em; }
+      font-size: 1em;
+      transition: all .5s ease-in-out; }
+
+a:hover {
+  opacity: 1;
+  transform: scale(1.2); }
 
 /* Layout Styles --------------------- */
 #header {
@@ -599,7 +605,7 @@ main {
   justify-content: center; }
 
 section {
-  background-color: #d8b2d2;
+  background-color: #ecd3d3;
   width: 100%;
   padding: 80px 0 20px 0; }
 
@@ -685,7 +691,7 @@ footer {
   font-size: 1.5em;
   font-family: "Playfair Display", serif;
   font-weight: 400;
-  color: #9FD1DA;
+  color: #ecd3d3;
   letter-spacing: .5px;
   line-height: 1.8em; }
   @media (min-width: 1px) and (max-width: 768px) {
@@ -877,9 +883,9 @@ ul.skills-gd {
   transform: translate3d(0px, 0px, 0px); }
 
 .skills li {
-  border: 2px solid #9FD1DA;
+  border: 2px solid #ecd3d3;
   display: inline-block;
-  color: #9FD1DA;
+  color: #ecd3d3;
   opacity: 1;
   padding: 8px 15px;
   margin: 0 20px 20px; }
