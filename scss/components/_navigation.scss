@@ -1,48 +1,104 @@
 /* Navigation Styles --------------------- */
 
 .nav {
-  @extend %center-align;
-  margin: 0;
-  padding:  0 0 70px;
-  @include mq(medium){
-    @include flex (flex, row, wrap, $just: center){
-      margin: 25px 0 0 200px;
-      width: 70%;
-    }
-    @include mq(large){
-      @include flex (flex, row, wrap, $just: center){
-        margin: 25px 0 0 200px;
-        width: 80%;
-      }
-}}
+  font-family: $stack-opensans;
+  font-weight: 100;
+  color: $sage;
 
-  @include mq(small){
-    padding-top: 40px;
-    @include flex (flex, row, wrap, $just: center){
-      padding: 25px 0 40px 0px;
+    @include mq(medium){
+      @include flex (flex, row,  $just: center){
+        margin: 20px;
     }
+}
+
+    @include mq(large){
+      @include flex ( flex, row, wrap, $just: flex-end){
+          margin: 20px;
+    }
+}
+
+      @include mq(small){
+        border-bottom:1px solid $sage;
+      }
+
+      @include e(item){
+        a, .fix {
+            @extend %text-dec;
+            text-align: left;
+            display: block;
+            font-size: .95em;
+          }
+            @include mq(small){
+              font-size: .9em;
+            }
+          }
   }
 
 
-    @include e(item)  {
-      border-radius: .4em;
-      padding: 12px 20px;
 
-      a {
-          @extend %text-dec;
-          display: block;
-          color: $black;
-          font-weight: $font-wt-light;
-          font-size: 1em;
-          //opacity: .25;
-          transition: all .5s ease-in-out;
-    }
+.hover-underline-menu {
+  width: 100%;
+}
 
+.hover-underline-menu .menu a, .fix {
+  color: #8EA37F;
+  padding: 1.2rem 1.5rem;
+}
+
+.hover-underline-menu .menu .underline-from-center {
+  position: relative;
+}
+
+.hover-underline-menu .menu .underline-from-center::after {
+  content: "";
+  position: absolute;
+  top: calc(100% - 0.125rem);
+  border-bottom: 0.125rem solid #8EA37F;
+  left: 50%;
+  right: 50%;
+  transition: all 0.5s ease;
+}
+
+.hover-underline-menu .menu .underline-from-center:hover::after {
+  left: 0;
+  right: 0;
+  transition: all 0.5s ease;
+}
+
+/* dropdown menu styles --------------------- */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+
+  @include mq(small){
+    top:0;
+    left: 100px;
+    font-size: .95em;
   }
 }
 
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
 
-a:hover{
-  opacity: 1;
-  transform: scale(1.2);
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }

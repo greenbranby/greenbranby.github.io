@@ -5,18 +5,19 @@
 ul.skills,
 ul.skills-gd {
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: $stack-opensans;
+  font-weight: $font-wt-light;
   text-transform: uppercase;
   @extend %center-align;
   padding: 0 2% 0 2%;
-  margin: 0 auto;
+  //margin: 0 auto;
 
   @include mq(small){
-    margin-bottom: 60px;
+    //margin-bottom: 30px;
   }
 
   @include mq(medium){
-    margin: 60px auto;
+    margin: 0 auto;
     padding: 0 10% 0 10%;
   }
     @include mq(large){
@@ -62,7 +63,7 @@ ul.skills-gd {
   margin: 0 20px 20px;
 
   @include mq(small){
-    font-size: 1em;
+    font-size: .85em;
   }
 }
 
@@ -100,13 +101,13 @@ ul.skills-gd {
 .skills li{
   border: 2px solid $blush;
   display: inline-block;
-  color: $blush;
+  color: $white;
   opacity: 1;
   padding: 8px 15px;
   margin: 0 20px 20px;
 
   @include mq(small){
-    font-size: 1em;
+    font-size: .85em;
   }
 }
 

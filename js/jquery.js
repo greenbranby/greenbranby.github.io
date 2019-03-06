@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-
+$("[data-menu-underline-from-center] a").addClass("underline-from-center");
 
 $("a.social").on("mouseenter mouseleave touchstart", function(e){
     if(e.type == 'touchstart') {

@@ -1,8 +1,8 @@
 // Font stack
 
-$font-url           : "https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,700|Playfair+Display:400,400i,700,700i,900";
-$stack-playfair     : 'Playfair Display', serif;
-$stack-crimson      : 'Crimson Text', serif;
+$font-url           : "https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans";
+$stack-bree         : 'Bree Serif', serif;
+$stack-opensans     : 'Open Sans', sans-serif;
 
 // Font Weight
 
@@ -18,20 +18,21 @@ $font-wt-boldest     : 700;
 $base-font-size: 18px;
 
 // Color Values
-$white        : #fff;
-$black        : #000;
-$grey         : #878787;
-$coral        :#fd7856;
-$hot-pink     :#ff0066;
+$white            :#fff;
+$black            :#000;
+$grey             :#878787;
+$coral            :#fd7856;
+$hot-pink         :#ff0066;
 $cornflower-blue  :#9FD1DA;
-$dark-gray    :#2C3339;
-$teal         :#79BCC4;
-$lilac        :#d8b2d2;
-$blush        :#ecd3d3;
+$dark-gray        :#2C3339;
+$teal             :#79BCC4;
+$lilac            :#d8b2d2;
+$blush            :#ecd3d3;
+$sage             :#8EA37F;
 
 // Color Usage
-$color--primary      : $cornflower-blue;
-$color-secondary      :$dark-gray;
+$color--primary    :$cornflower-blue;
+$color-secondary   :$dark-gray;
 
 
 // Color Palette modifiers

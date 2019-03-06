@@ -1,56 +1,46 @@
 
 /* Layout Styles --------------------- */
+.container {
+  padding: 0 10px;
+}
 
 #header {
-  width: 100%;
-  @extend %marg-auto;
-  padding: 25px 0;
+  margin: 40px auto;
+  max-width: 1440px;
+  display: block;
+  text-align: left;
 
   @include mq(medium){
-    display: block;
+    @include flex (flex, row, wrap, $just:center) {
+      margin-bottom: 20px;
+    }
+  }
+    @include mq(large){
+      @include flex (flex, row, nowrap, $just: flex-end) {
+        width: 80%;
+    }
   }
 }
+
+main {
+  background-color: #8EA37F;
+  width: 100%;
+  padding: 30px 30px 10px 30px;
+
+  @include mq(medium){
+    padding: 30px;
+    }
+  }
 
 .center {
   @extend %center-align;
 }
-.colorful {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: url("../images/desktop.jpg") center center no-repeat;
-  background-size: cover;
-  z-index: 0;
-
-  &:before {
-    content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-image: linear-gradient(to bottom right,#d8b2d2,#9FD1DA);
-	opacity: .8;
-  z-index: -1;
-
-  }
-}
-
-.colorful {
-  @include mq(small){
-  background:
-    -webkit-linear-gradient(135deg, hsla(189.06, 44.75%, 73.88%, 1) 15%, hsla(189.06, 44.75%, 73.88%, 0) 80%),
-    -webkit-linear-gradient(205deg, hsla(309.06, 32.8%, 77.33%, 1) 100%, hsla(309.06, 32.8%, 77.33%, 0) 70%);
-  background:
-    linear-gradient(315deg, hsla(189.06, 44.75%, 73.88%, 1) 15%, hsla(189.06, 44.75%, 73.88%, 0) 80%),
-    linear-gradient(245deg, hsla(309.06, 32.8%, 77.33%, 1) 100%, hsla(309.06, 32.8%, 77.33%, 0) 70%);
-  }
-}
 
 #projects {
   margin: 0 auto;
-  padding: 80px 50px;
+  padding: 30px 50px 50px 50px;
   max-width: 1440px;
+  border-top: 1px solid #dcdcdc;
 
   @include mq(medium){
     @include flex (flex, row, wrap, $just: space-around) {
@@ -59,14 +49,10 @@
 
   @include mq(small){
     @include flex (flex, row, wrap, $just: center) {
+      border-top: none;
+      padding: 0;
     }
   }
-}
-
-main {
-  background-color: #2C3339;
-  width: 100%;
-  padding: 80px 0 20px 0;
 }
 
 .project-card {
@@ -84,8 +70,13 @@ main {
 section {
   background-color: $blush;
   width: 100%;
-  padding: 80px 0 20px 0;
-}
+  padding: 30px 30px 10px 30px;
+
+  @include mq(medium){
+    padding: 30px;
+    }
+  }
+
 
 .social-icons li{
   padding: 10px 15px 0 0;
@@ -96,7 +87,7 @@ footer {
   padding-bottom: 100px;
   width: 100%;
   height: auto;
-  background-color: #9FD1DA;
+  border-top: 1px solid #dcdcdc;
 }
 
 footer ul{
