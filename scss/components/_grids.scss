@@ -1,15 +1,16 @@
 /* Grid ------------------ */
 
 .grid__col--3 {
-  color: $black;
-  margin-top: 40px;
-  margin-left: 60px;
+  color: $white;
+  margin: 10px 0 0 40px;
+  padding-top: 10px;
   display:block;
   width: 300px;
 
-    @include mq(small){
-      margin-top: 0;
-      padding-top: 40px;
+    @include mq(medium){
+      margin-top: 40px;
+      margin-left: 60px;
+      padding-bottom: 100px;
     }
 }
 

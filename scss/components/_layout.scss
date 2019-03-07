@@ -1,14 +1,22 @@
 
 /* Layout Styles --------------------- */
 .container {
-  padding: 0 10px;
+  padding: 20px;
+  margin: 0 auto;
+
+  @include mq(medium){
+    padding: 50px;
+    max-width: 1440px;
+  }
 }
 
+
+
 #header {
-  margin: 40px auto;
+  margin: 0 auto;
   max-width: 1440px;
   display: block;
-  text-align: left;
+  text-align: center;
 
   @include mq(medium){
     @include flex (flex, row, wrap, $just:center) {
@@ -18,19 +26,21 @@
     @include mq(large){
       @include flex (flex, row, nowrap, $just: flex-end) {
         width: 80%;
+        margin: 40px auto;
     }
   }
 }
 
 main {
-  background-color: #8EA37F;
+  border: 2px solid $cornflower-blue;
   width: 100%;
-  padding: 30px 30px 10px 30px;
+  padding: 20px 10px 10px 10px;
 
   @include mq(medium){
     padding: 30px;
     }
   }
+
 
 .center {
   @extend %center-align;
@@ -68,9 +78,9 @@ main {
   }
 }
 section {
-  background-color: $blush;
+  border: 2px solid $cornflower-blue;
   width: 100%;
-  padding: 30px 30px 10px 30px;
+  padding: 20px 10px 10px 10px;
 
   @include mq(medium){
     padding: 30px;
@@ -83,8 +93,10 @@ section {
 }
 
 footer {
-  margin: 0 auto;
-  padding-bottom: 100px;
+  background-color: $sage;
+  border: 2px solid $sage;
+  margin-top:50px;
+  padding-bottom: 30px;
   width: 100%;
   height: auto;
   border-top: 1px solid #dcdcdc;
@@ -92,6 +104,7 @@ footer {
 
 footer ul{
   @include mq(medium){
+    padding-bottom: 200px;
     @include flex(flex, row, nowrap, $just: flex-start){
       margin: 0;
       padding: 0;

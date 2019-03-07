@@ -4,25 +4,21 @@
 
 ul.skills,
 ul.skills-gd {
-  font-size: 16px;
+  font-size: 10px;
   font-family: $stack-opensans;
   font-weight: $font-wt-light;
   text-transform: uppercase;
   @extend %center-align;
   padding: 0 2% 0 2%;
-  //margin: 0 auto;
-
-  @include mq(small){
-    //margin-bottom: 30px;
-  }
 
   @include mq(medium){
+    font-size: 14px;
     margin: 0 auto;
     padding: 0 10% 0 10%;
   }
     @include mq(large){
       padding: 0 5% 0 5%;
-      max-width: 1480px;
+      max-width: 1100px;
   }
 }
 /* Bounce in headline animatation------------------ */
@@ -46,27 +42,31 @@ ul.skills-gd {
   }
 }
 
-.headline--primary {
-  opacity: 0;
+.logo {
+  width: 97%;
   animation-name: bounceIn;
   animation-duration: 450ms;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
-}
 
-
-.skills-gd li {
-  border: 2px solid $dark-gray;
-  display: inline-block;
-  color: $dark-gray;
-  padding: 8px 15px;
-  margin: 0 20px 20px;
-
-  @include mq(small){
-    font-size: .85em;
+  @include mq(medium){
+    width: auto;
   }
 }
 
+
+.skills-gd li,
+.skills li{
+  border: 2px solid $cornflower-blue;
+  display: inline-block;
+  color: $sage;
+  padding: 8px 15px;
+  margin: 0 5px 5px;
+
+  @include mq(medium){
+    margin: 0 20px 20px;
+  }
+}
 
 /*animation element*/
 
@@ -98,18 +98,6 @@ ul.skills-gd {
   transform: translate3d(0px, 0px, 0px);
 }
 
-.skills li{
-  border: 2px solid $blush;
-  display: inline-block;
-  color: $white;
-  opacity: 1;
-  padding: 8px 15px;
-  margin: 0 20px 20px;
-
-  @include mq(small){
-    font-size: .85em;
-  }
-}
 
 .grid__col{
   @include mq(medium){
