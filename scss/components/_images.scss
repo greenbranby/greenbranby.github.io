@@ -14,7 +14,8 @@ img {
 }
 
 .photo-overlay {
-	color: $white;
+	color: #8EA37F;
+  border: 2px solid #9FD1DA;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -26,7 +27,8 @@ img {
 
     @include flex (flex, column, $just: center){
   	align-items: center;
-  	background: rgba(142,163,127, .95);
+  	background: rgba(255,255,255, 1);
+
   }
 }
 

@@ -416,8 +416,8 @@ a.button {
   padding: 15px 10px;
   margin: 10px;
   text-decoration: none;
-  color: #fff;
-  border: 2px solid #fff;
+  color: #8EA37F;
+  border: 2px solid #8EA37F;
   font-size: .8em;
   font-family: sans-serif;
   font-weight: normal;
@@ -426,8 +426,9 @@ a.button {
   display: inline-block; }
 
 a.button.hover {
-  color: #ecd3d3;
-  border: 2px solid #ecd3d3; }
+  color: #fff;
+  background-color: #9FD1DA;
+  border: 2px solid #9FD1DA; }
 
 a.social {
   display: inline-block;
@@ -792,7 +793,8 @@ img {
   max-width: 100%; }
 
 .photo-overlay {
-  color: #fff;
+  color: #8EA37F;
+  border: 2px solid #9FD1DA;
   position: absolute;
   top: 0;
   right: 0;
@@ -805,7 +807,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(142, 163, 127, 0.95); }
+  background: white; }
 
 /* =================================
   Photo Overlay Transitions
